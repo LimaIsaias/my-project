@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-project';
+  title = 'My Project';
+  cliente = '';
+  clientes = [];
+
+  addCliente() {
+    this.clientes.push(this.cliente);
+    console.log(this.clientes);
+  }
 }

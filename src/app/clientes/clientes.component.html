@@ -10,6 +10,7 @@
   <ul>
     <li
     [id]=" 'lista' + item.nome "
+    [style.color]="item.idade > 18 ? 'red':'green'"
      *ngFor="let item of clientes" [innerHtml]= "item.nome+'-'+item.idade">
       <!-- {{item.nome}}-{{item.idade}} -->
     </li>

@@ -8,7 +8,7 @@
 <div class="lista">
   <button type="button" (click)="addCliente()">Add Client</button>
   <ul>
-    <li *ngFor="let item of clientes">{{item}}</li>
+    <li *ngFor="let item of clientes">{{item.nome}}-{{item.idade}}</li>
   </ul>
 </div>
 

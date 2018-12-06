@@ -11,12 +11,14 @@ export class ClientesComponent {
   constructor() { }
   cliente: Cliente = {
     nome: '',
-    idade: 10
+    idade: null
   };
   clientes = [];
   title = 'Página de clientes';
 
   addCliente() {
-    this.clientes.push(this.cliente);
+    // Cria um objeto novo a cada vez que a função é executada
+    const clienteNovo = Object.assign({}, this.cliente);
+    this.clientes.push(clienteNovo);
   }
 }

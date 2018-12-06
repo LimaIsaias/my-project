@@ -1,7 +1,5 @@
-.lista{
-    text-align: center;
-}
-
-h1{
-    text-align: center;
-}
+h1{text-align: center;}
+.lista{text-align: center;}
+.vermelho{color: red;}
+.verde{color:green;}
+.fontG{font-size: 25px;}

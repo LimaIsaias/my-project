@@ -8,11 +8,11 @@
 <div class="lista">
   <button type="button" (click)="addCliente()">Add Client</button>
   <ul>
-    <li
-    [id]=" 'lista' + item.nome "
-    [style.color]="item.idade > 18 ? 'red':'green'"
-     *ngFor="let item of clientes" [innerHtml]= "item.nome+'-'+item.idade">
-      <!-- {{item.nome}}-{{item.idade}} -->
+    <li 
+    [id]=" 'lista' + item.nome " 
+    [ngClass]="{'verde':item.idade >= 18,'fontG':item.idade == 18,'vermelho':item.idade < 18}"
+    *ngFor="let item of clientes"
+    [innerHtml]="item.nome+'-'+item.idade">
     </li>
   </ul>
 </div>

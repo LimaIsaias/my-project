@@ -1,7 +1,14 @@
+<h1>
+  {{ title }}
+</h1>
+<label>Nome:</label>
+  <input type="text" [(ngModel)]="cliente.nome">
+<label>Idade:</label>
+  <input type="text" [(ngModel)]="cliente.idade">
 <div class="lista">
-  <input type="text" [(ngModel)]="cliente">
   <button type="button" (click)="addCliente()">Add Client</button>
   <ul>
     <li *ngFor="let item of clientes">{{item}}</li>
   </ul>
 </div>
+

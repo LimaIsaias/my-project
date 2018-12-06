@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Cliente } from './cliente';
 
 @Component({
   selector: 'app-clientes',
@@ -8,8 +9,12 @@ import { Component } from '@angular/core';
 export class ClientesComponent {
 
   constructor() { }
-  cliente = '';
+  cliente: Cliente = {
+    nome: '',
+    idade: 10
+  };
   clientes = [];
+  title = 'Página de clientes';
 
   addCliente() {
     this.clientes.push(this.cliente);

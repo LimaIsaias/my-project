@@ -1,0 +1,7 @@
+<div class="lista">
+  <input type="text" [(ngModel)]="cliente">
+  <button type="button" (click)="addCliente()">Add Client</button>
+  <ul>
+    <li *ngFor="let item of clientes">{{item}}</li>
+  </ul>
+</div>
